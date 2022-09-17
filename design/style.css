@@ -1,0 +1,48 @@
+/* media queries are used to style for different media type viewports/screens e.g desktop, smartphone */
+/* use all for all types of devices, print for printers, screens for smartphones, desktop, tablets. Speech for text readers */
+
+body {
+    background-color: lightgreen;
+}
+
+@media screen and (min-width: 480px) { 
+    body {
+        background-color: red;
+    }
+    
+}
+#main {
+    margin-left: 4px;
+}
+.wrapper {
+    overflow: auto;
+}
+
+#leftbar {
+    float: none;
+    width: auto;
+}
+
+#menulist {
+    padding: 0;
+    margin: 0;
+}
+
+.menu-items {
+    background-color: aqua;
+    border: 1px solid;
+    border-radius: 5px;
+    list-style-type: none;
+    padding: 3px;
+    margin: 4px;
+}
+
+@media screen and (min-width: 480px) {
+    #leftbar {
+        width:200px;
+        float: left;
+    }
+    #main {
+        margin-left: 200px;
+    }
+}
